@@ -7,7 +7,7 @@ Si todo se cumple podremos acceder a la funcion del perfil
 next: es para seguir con el siguiente middleware.
 En los headers se mandan los jwt, si todo esta bien entonces se le da acceso al usuario.
 
-postman: authorization ✔ bearer ✔ token ✔
+postman: authorization ✔ bearer ✔ token ✔!
 (req.headers.authorization)
 
 //Autenticamos el usuario para copiar el token
