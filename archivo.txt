@@ -1,0 +1,11 @@
+El método populate() se puede utilizar en campos de tipo ref o Schema.Types.ObjectId en el esquema de Mongoose para indicar qué campos deben ser poblados.
+Agregamos la ref dentro de populate.
+Nos retorna un objeto grande combinando a la tarea y al proyecto.
+
+Métodos Mongoose:
+Where: agrega otra condición adicional ademas de la que se paso por ejemplo el id
+Equals: sirve para comparar si un campo es igual a un valor determinado 
+
+where("proyecto").equals(id) 
+
+se encarga de fijarse si el campo "proyecto" es igual al valor id. Si el valor del campo "proyecto" es igual a id, se considera que hay un match y se incluirá en los resultados de la consulta.
