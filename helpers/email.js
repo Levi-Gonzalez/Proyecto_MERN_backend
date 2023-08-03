@@ -4,11 +4,11 @@ export const emailRegistro = async (datos) => {
   const { nombre, email, token } = datos;
 
   const transport = nodemailer.createTransport({
-    host: "sandbox.smtp.mailtrap.io",
-    port: 2525,
+    host: env.process.EMAIL_HOST,
+    port: env.process.EMAIL_PORT,
     auth: {
-      user: "b0a3d328b33ffa",
-      pass: "48a2b58c4e5408",
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
@@ -25,7 +25,7 @@ export const emailRegistro = async (datos) => {
         <p>Solo debes comprobarla con el siguiente enlace:</p>
         <a href="${process.env.FRONTEND_URL}/confirmar/${token}">Comprobar Cuenta</a>
 
-  `,
+        <img src="https://www.fayerwayer.com/resizer/6InU4oo4h9NOiJaeLUfSjytz4I0=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/AXW44VF4LVE7DDVUY7WYIEEYYY.jpg" class="w-5 h-5" alt="Imagen de Goku"  />`,
   });
 };
 
