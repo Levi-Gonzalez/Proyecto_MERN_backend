@@ -24,8 +24,7 @@ export const emailRegistro = async (datos) => {
         <p>Tu cuenta ya esta casi lista:</p> 
         <p>Solo debes comprobarla con el siguiente enlace:</p>
         <a href="${process.env.FRONTEND_URL}/confirmar/${token}">Comprobar Cuenta</a>
-
-        <img src="https://www.fayerwayer.com/resizer/6InU4oo4h9NOiJaeLUfSjytz4I0=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/AXW44VF4LVE7DDVUY7WYIEEYYY.jpg" class="w-5 h-5" alt="Imagen de Goku"  />`,
+        `,
   });
 };
 
